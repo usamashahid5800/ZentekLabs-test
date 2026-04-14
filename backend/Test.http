@@ -1,0 +1,35 @@
+@Test_HostAddress = https://localhost:7001
+@Token = replace_me
+
+GET {{Test_HostAddress}}/health
+Accept: application/json
+
+###
+
+POST {{Test_HostAddress}}/auth/token
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "P@ssw0rd123"
+}
+
+###
+
+POST {{Test_HostAddress}}/products
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+  "name": "Demo Product",
+  "colour": "Blue",
+  "price": 99.99
+}
+
+###
+
+GET {{Test_HostAddress}}/products?colour=blue
+Authorization: Bearer {{Token}}
+Accept: application/json
+
+###
