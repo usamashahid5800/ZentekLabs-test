@@ -6,6 +6,7 @@ This repository contains:
 
 ## Architecture
 - See [ARCHITECTURE.md](./ARCHITECTURE.md) for the event-driven microservices diagram.
+- Rendered image is available at [docs/architecture-diagram.png](./docs/architecture-diagram.png).
 
 ## Run Backend
 ```powershell

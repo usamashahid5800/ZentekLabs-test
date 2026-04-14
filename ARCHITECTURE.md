@@ -1,5 +1,7 @@
 # Event-Driven Architecture Diagram
 
+Rendered diagram image: [architecture-diagram.png](./docs/architecture-diagram.png)
+
 ```mermaid
 flowchart LR
     U[Admin User]
